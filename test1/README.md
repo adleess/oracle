@@ -3,7 +3,7 @@
 
 #### sql代码
 
-![](./pic/pict1.png)
+![](./pict1.png)
 
 ```sql 
 SELECT d.department_name,count(e.job_id)as "部门总人数",
