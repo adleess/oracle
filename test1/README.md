@@ -1,15 +1,21 @@
 # 第一次实验
-### 18软工三班 王鹏凯
+#### 18软工三班 王鹏凯
 
-#### sql代码
+## 实验内容
 
+分别执行两个实例语句后，查看优化计划
+![](./pict2.png)
 ![](./pict1.png)
+根据优化计划对department表创建带排序规则的索引
+![](./pict3.png)
 
+----------------------------------------------------------------
+使用左外连接进行两个主键关联表的数据查询
 ```sql 
 SELECT d.department_name,count(e.job_id)as "部门总人数",
 avg(e.salary)as "平均工资"
 from hr.departments d JOIN hr.employees e
-on d.department_id = e.department_id
+on d.department_id = e.department_id(+)
 and d.department_name in ('IT','Sales')
 GROUP BY d.department_name;
 
