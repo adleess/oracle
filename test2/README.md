@@ -35,7 +35,7 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
     SQL> exit
     ```
 
-    ![](./pict1.png)
+    ![](pict1.png)
 
 - 第2步：新用户wpk连接到pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。
 
@@ -61,7 +61,7 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
     SQL>exit
     ```
 
-    ![](./pict2.png)
+    ![](pict2.png)
 
 - 第3步：用户hr连接到pdborcl，查询new_user授予它的视图myview
 
@@ -75,7 +75,7 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
     SQL> exit
     ```
 
-    ![](./pict3.png)
+    ![](pict3.png)
 
 ## 数据库和表空间占用分析
 
@@ -98,4 +98,4 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
  where  a.tablespace_name = b.tablespace_name;
 ```
 
-   ![](./pict4.png)
+   ![](pict4.png)
