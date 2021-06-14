@@ -527,7 +527,7 @@ c.产品（PRODUCTS）：产品包括3个属性:产品ID（PRODUCT_ID）产品�
 
 ![test6](5.2.4-1.png)
 
-####5.2.5删除备份集之后，备份文件也删除了。只留下日志文件。
+#### 5.2.5删除备份集之后，备份文件也删除了。只留下日志文件。
 
     [oracle@oracle-pc ~]$ cd rman_backup
     [oracle@oracle-pc rman_backup]$ ls
